@@ -8,6 +8,13 @@ function App() {
   const handleButtonClick = (value) => {
     if (value === '=') {
       try {
+
+        if (!input.trim() || /[+\-*\/]$/.test(input)) {
+          // If input is empty or ends with an operator, it's an incomplete expression
+          setResult('Error');
+          return;
+        }
+        
         const calculatedResult = evaluateExpression(input);
         setResult(calculatedResult);
       } catch (error) {
