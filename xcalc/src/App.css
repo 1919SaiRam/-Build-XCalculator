@@ -1,0 +1,43 @@
+/* src/App.css */
+/* src/App.css */
+.calculator {
+  width: 350px; /* Increase the width to accommodate larger input and buttons */
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px; /* Increase font size for the title */
+  color: #333; /* Adjust color as needed */
+}
+
+input[type='text'] {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 15px; /* Increase padding for better input field visibility */
+  font-size: 24px; /* Increase font size for better visibility */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* Increase gap between buttons */
+}
+
+button {
+  padding: 15px; /* Increase padding for larger buttons */
+  font-size: 20px;
+  background-color: #f0f0f0; /* Light gray background color */
+  border: 1px solid #ccc; /* Add border for button differentiation */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #e0e0e0; /* Darker gray background color on hover */
+}
+
+.result {
+  margin-top: 20px; /* Increase margin for better separation */
+  font-size: 28px; /* Increase font size for better visibility */
+}
